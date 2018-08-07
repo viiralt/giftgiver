@@ -29,6 +29,7 @@ ShallowWrapper {
 >
           add gift
 </styled.button>,
+        <Gift />,
       ],
     },
     "ref": null,
@@ -67,6 +68,15 @@ ShallowWrapper {
         "rendered": "add gift",
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -88,6 +98,7 @@ ShallowWrapper {
 >
             add gift
 </styled.button>,
+          <Gift />,
         ],
       },
       "ref": null,
@@ -124,6 +135,15 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": "add gift",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
           "type": [Function],
         },
       ],
