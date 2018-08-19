@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { Wrapper, Heading, Button } from '../elements';
+import GiftList from './GiftList';
 
 export default class App extends Component {
   state = {
@@ -17,9 +18,11 @@ export default class App extends Component {
   };
 
   render() {
+    const { gifts } = this.state;
     return (
       <Wrapper>
         <Heading>Gift Giver</Heading>
+        <div className="gift-list">{gifts.map(gift => <div key={gift.id} />)}</div>
         <Button type="submit" onClick={this.handleClick}>
           Add gift
         </Button>

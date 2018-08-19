@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`App renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -21,6 +21,11 @@ ShallowWrapper {
         <styled.h2>
           Gift Giver
 </styled.h2>,
+        <div
+          className="gift-list"
+>
+          
+</div>,
         <styled.button
           onClick={[Function]}
           type="submit"
@@ -41,6 +46,18 @@ ShallowWrapper {
         "ref": null,
         "rendered": "Gift Giver",
         "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [],
+          "className": "gift-list",
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -68,6 +85,11 @@ ShallowWrapper {
           <styled.h2>
             Gift Giver
 </styled.h2>,
+          <div
+            className="gift-list"
+>
+            
+</div>,
           <styled.button
             onClick={[Function]}
             type="submit"
@@ -88,6 +110,18 @@ ShallowWrapper {
           "ref": null,
           "rendered": "Gift Giver",
           "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [],
+            "className": "gift-list",
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": "div",
         },
         Object {
           "instance": null,

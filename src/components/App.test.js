@@ -3,18 +3,34 @@ import { shallow } from 'enzyme';
 
 import App from './App';
 import { Button } from '../elements';
+import GiftList from './GiftList';
 
-const wrapper = shallow(<App />);
+describe('App', () => {
+  const wrapper = shallow(<App />);
 
-it('renders correctly', () => {
-  expect(wrapper).toMatchSnapshot();
-});
+  it('renders correctly', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 
-it('initialises the `state` with an empty list of gifts', () => {
-  expect(wrapper.state('gifts')).toEqual([]);
-});
+  it('initialises the `state` with an empty list of gifts', () => {
+    expect(wrapper.state('gifts')).toEqual([]);
+  });
 
-it('adds new gift to the `state` when clicking the `add gift` button', () => {
-  wrapper.find(Button).simulate('click');
-  expect(wrapper.state('gifts')).toEqual([{ id: 1 }]);
+  describe('when clicking the `add gift button`', () => {
+    beforeEach(() => {
+      wrapper.find(Button).simulate('click');
+    });
+
+    afterEach(() => {
+      wrapper.setState({ gifts: [] });
+    });
+
+    it('adds a new gift to the `state`', () => {
+      expect(wrapper.state('gifts')).toEqual([{ id: 1 }]);
+    });
+
+    it('adds a new gift to the rendered list', () => {
+      expect(wrapper.find('.gift-list').children().length).toEqual(1);
+    });
+  });
 });
