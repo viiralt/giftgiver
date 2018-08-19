@@ -17,36 +17,21 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <styled.h2>
-        Gift Giver
-</styled.h2>,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": "Gift Giver",
-      },
-      "ref": null,
-      "rendered": "Gift Giver",
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <styled.h2>
+      "children": Array [
+        <styled.h2>
           Gift Giver
 </styled.h2>,
-      },
-      "ref": null,
-      "rendered": Object {
+        <styled.button
+          onClick={[Function]}
+          type="submit"
+>
+          Add gift
+</styled.button>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
@@ -57,6 +42,67 @@ ShallowWrapper {
         "rendered": "Gift Giver",
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Add gift",
+          "onClick": [Function],
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": "Add gift",
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.h2>
+            Gift Giver
+</styled.h2>,
+          <styled.button
+            onClick={[Function]}
+            type="submit"
+>
+            Add gift
+</styled.button>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Gift Giver",
+          },
+          "ref": null,
+          "rendered": "Gift Giver",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Add gift",
+            "onClick": [Function],
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": "Add gift",
+          "type": [Function],
+        },
+      ],
       "type": [Function],
     },
   ],
